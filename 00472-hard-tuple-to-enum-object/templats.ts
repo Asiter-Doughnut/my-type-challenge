@@ -1,5 +1,5 @@
 type TupleKeys<T extends readonly unknown[]> = T extends readonly [
-  infer Head,
+  infer _Head,
   ...infer Tail
 ]
   ? TupleKeys<Tail> | Tail["length"]
