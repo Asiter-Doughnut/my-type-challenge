@@ -1,2 +1,1 @@
-type Length<T extends { readonly [x: number]: any; readonly length: number }> =
-  T["length"];
+type Length<T extends readonly unknown[]> = T["length"];
