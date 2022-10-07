@@ -1,6 +1,4 @@
 import type { Equal, Expect } from "@type-challenges/utils";
-type B = Permutation<"A" | "B" | "C">;
-type C = Permutation<boolean>;
 
 type cases = [
   Expect<Equal<Permutation<"A">, ["A"]>>,
