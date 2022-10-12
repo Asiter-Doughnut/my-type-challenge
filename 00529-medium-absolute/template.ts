@@ -1,0 +1,1 @@
+type Absolute<T extends number | string | bigint> = `${T}` extends `${infer Head}${'-' | '_' | 'n'}${infer Tail}` ? Absolute<`${Head}${Tail}`> : `${T}`
