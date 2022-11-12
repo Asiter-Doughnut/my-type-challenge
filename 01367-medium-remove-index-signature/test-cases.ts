@@ -22,9 +22,9 @@ type Baz = {
   baz: string
 }
 
-type cases = [
-  Expect<Equal<RemoveIndexSignature<Foo>, { foo(): void }>>,
-  Expect<Equal<RemoveIndexSignature<Bar>, { bar(): void; 0: string }>>,
-  Expect<Equal<RemoveIndexSignature<FooBar>, { [foobar](): void }>>,
-  Expect<Equal<RemoveIndexSignature<Baz>, { bar(): void; baz: string }>>,
-]
+// type cases = [
+//   Expect<Equal<RemoveIndexSignature<Foo>, { foo(): void }>>,
+//   Expect<Equal<RemoveIndexSignature<Bar>, { bar(): void; 0: string }>>,
+//   Expect<Equal<RemoveIndexSignature<FooBar>, { [foobar](): void }>>,
+//   Expect<Equal<RemoveIndexSignature<Baz>, { bar(): void; baz: string }>>,
+// ]
