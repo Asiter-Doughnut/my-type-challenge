@@ -7,4 +7,4 @@ type AnyOf<T extends readonly any[]> = T[number] extends
   | undefined
   | null
   ? false
-  :  true;
+  :   true;
